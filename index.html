@@ -4,42 +4,67 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!--My CSS--> 	
-<link href="stylesheet0.css" rel="stylesheet" type="text/css">
+	<!-- Jquery js -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
-<!--Fonts-->
+	<!--Bootstrap--> 	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-<!--Other-->
-<title>Home</title>
+	<!--Ajax--> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!--My CSS--> 	
+	<link href="newcss.css" rel="stylesheet" type="text/css">
+
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Nunito">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!--Other-->
+	<title>Home</title>
 
 </head>
 
-<body>
+<body id="body">
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">EMILIE 1, 2, 3!</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="past.html">Past</a></li>
-      <li><a href="present.html">Present</a></li>
-      <li><a href="future.html">Future</a></li>
-    </ul>
-  </div>
-</nav>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="index.html">EMILIE 1, 2, 3!</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a id="past" link="past.html" href="#" onclick="display(this)">Past</a></li>
+	      <li class="active"><a id="present" link="present.html" href="#" onclick="display(this)">Present</a></li>
+	      <li class="active"><a id="future" link="future.html" href="#" onclick="display(this)">Future</a></li>
+	    </ul>
+	  </div>
+	</nav>
 
-<div id="container"></div>
+	<div id="container"></div>
 
 <script>
 
+var icon = document.createElement("icon");
+    icon.classList.add('fas', 'fa-spinner', 'fa-spin', 'mr-2');
+var container = document.getElementById("container");
 
+function display(target) {
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+		if (this.status == 200) {
+	      container.innerHTML =
+	      this.responseText;
+	    }
+	  };
+	var url = target.getAttribute('link');
+	xhttp.open("GET", url, true);
+	xhttp.send();
+}
 
 </script>
+
 </body>

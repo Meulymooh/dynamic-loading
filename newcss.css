@@ -1,16 +1,17 @@
+@media only screen and (max-device-width: 1366px) {
+  .slide {
+    background-attachment: scroll;
+  }
+}
+
 html {
   height: 100%;
-  overflow: hidden;
 }
 
 body { 
   margin:0;
   padding:0;
-	perspective: 1px;
-	transform-style: preserve-3d;
   height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
   font-family: Nunito;
 }
 
@@ -29,19 +30,14 @@ p {
   padding: 25vh 10%;
   min-height: 100vh;
   width: 100vw;
+  height: 100%; 
   box-sizing: border-box;
   box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
-  transform-style: inherit;
-}
-
-.slide:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+  background: 50% 50% / cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title {
@@ -60,11 +56,7 @@ p {
 
 .title-left {
   margin-left: 0;
-  margin-right: 50%;	
-}
-
-.slide, .slide:before {
-  background: 50% 50% / cover; /*Expandable background image*/
+  margin-right: 50%;  
 }
 
 .header {
@@ -72,35 +64,59 @@ p {
   font-size: 175%;
   color: #fff;
   text-shadow: 0 2px 2px #000;
-  transform: translateZ(-1px) scale(2);
 }
 
-#title {
+.header1 {
   background-image: url("img/past.jpg");
-  z-index:2;
 }
 
-#title h1 {
- transform: translateZ(.25px) scale(.75);
- transform-origin: 50% 100%;
+.header2 {
+  background-image: url("img/student.jpg");
 }
 
-#slide1/*:before */{
+.header3 {
+  background-image: url("img/binoculars.jpg");
+}
+
+#slide1 {
   background-image: url("img/writer.jpg");
-  z-index:2;
 }
 
 #slide2 {
   background-image: url("img/translator-2.jpg");
-  transform: translateZ(-1px) scale(2);
 }
 
-#slide3/*:before */{
+#slide3{
   background-image: url("img/teacher-3.jpg");
-  z-index:2;
 }
 
 #slide4 {
   background-image: url("img/coordinator.jpg");
-  transform: translateZ(-1px) scale(2);
+}
+
+
+#slide5 {
+  background-image: url("img/easy.jpg");
+  z-index:2;
+}
+
+#slide6 {
+  background-image: url("img/responsive.jpg");
+}
+
+#slide7 {
+  background-image: url("img/javascript.jpg");
+}
+
+#slide8 {
+  background-image: url("img/stairs.jpg");
+}
+
+#slide9 {
+  background-image: url("img/work.jpg");
+}
+
+#slide10 {
+  background-image: url("img/victory.jpg");
+  z-index:2;
 }

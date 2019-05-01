@@ -1,6 +1,6 @@
 # Dynamic Loading - Starting with Ajax
 
-Link: [will be posted soon]
+Link: https://meulymooh.github.io/dynamic-loading/index.html
 
 
 ## Objectives of the exercise
@@ -10,7 +10,7 @@ Link: [will be posted soon]
 
 ## Personal objective
 
-Being able to use the result of the exercise later for other puroposes.
+Being able to use the result of the exercise later for other purposes.
 
 ## Documentation
 
@@ -18,18 +18,18 @@ Understanding AJAX as a Beginner Web Developer: https://www.codementor.io/sheena
 
 JSON and AJAX Tutorial: With Real Examples: https://youtu.be/rJesac0_Ftw
 
-## Sources
+## Image resources
 
-Images: https://unsplash.com/
+https://unsplash.com/
 
-## What I learned / deepened
+## What I learned / reinforced
 
-* Parallax
+* Parallax: https://www.w3schools.com/howto/howto_css_parallax.asp
 * Box shadow (CSS): https://developer.mozilla.org/fr/docs/Web/CSS/box-shadow
-* Z-index (CSS): https://www.alsacreations.com/astuce/lire/84-Comment-fonctionne-la-propriete-CSS-z-index-.html
-* Overflow (CSS): https://www.w3schools.com/cssref/pr_pos_overflow.asp
 * Cover for background image (CSS): https://www.alsacreations.com/astuce/lire/1216-arriere-plan-background-extensible.html
 
+## Difficulties
 
+Ajax: After loading the content in my div, the navbar's shape changed and I got an XML error in the console. I thought my JS/Ajax code was wrong and tried to fix it, but it didn't work. Turned out my JS/Ajax code was right. I just created 3 full HTML pages (with "head" and "body" tags) instead of just writing pure content. 
 
-
+Parallax: I initially performed a customized parallax effect using pure CSS via the "transform: translateZ" property. But once the content of the 3 pages was nested in the div of index file, the effect didn't work anymore and the content had display errors. I tried to solve the problem by adding the "preserve-3d" and "perspective" properties to my nesting div, but it didn't work either. So in the end I did it the basic way as shown on W3School, but it's not as nice as it originally was. :-(
