@@ -50,21 +50,24 @@
 
 <script>
 
-// Set the loading icon
+
 var loadingIcon = document.createElement("img");
 	loadingIcon.id = "loadingIcon";
     loadingIcon.setAttribute("src", "https://loading.io/spinners/typing/lg.-text-entering-comment-loader.gif");
 
-// Set the div that will nest the content of the 3 pages
 var container = document.getElementById("container");
 
-// When a menu link is clicked
+
+function scrollToTop() {
+	window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
 function display(target) {
-	// Empty the div every time a link is clicked
+	scrollToTop();
+	setTimeout(function () {
 	container.innerHTML = ""; 
-	// Loading icon appears
-	container.appendChild(loadingIcon); 
-	// Content appears after 3 seconds
+	container.appendChild(loadingIcon);
+	}, 1000); 
 	setTimeout(function () { 
 		var xhttp = new XMLHttpRequest();
 		xhttp.onreadystatechange = function() {
