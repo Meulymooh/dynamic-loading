@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Jquery js -->
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
 	<!--Bootstrap--> 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -31,6 +31,7 @@
 
 <body id="body">
 
+	<!-- Sticky navbar -->
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 	  <div class="container-fluid">
 	    <div class="navbar-header">
@@ -44,25 +45,38 @@
 	  </div>
 	</nav>
 
+	<!-- Div for content of the 3 pages -->
 	<div id="container"></div>
 
 <script>
 
-var icon = document.createElement("icon");
-    icon.classList.add('fas', 'fa-spinner', 'fa-spin', 'mr-2');
+// Set the loading icon
+var loadingIcon = document.createElement("img");
+	loadingIcon.id = "loadingIcon";
+    loadingIcon.setAttribute("src", "https://loading.io/spinners/typing/lg.-text-entering-comment-loader.gif");
+
+// Set the div that will nest the content of the 3 pages
 var container = document.getElementById("container");
 
+// When a menu link is clicked
 function display(target) {
-	var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function() {
-		if (this.status == 200) {
-	      container.innerHTML =
-	      this.responseText;
-	    }
-	  };
-	var url = target.getAttribute('link');
-	xhttp.open("GET", url, true);
-	xhttp.send();
+	// Empty the div every time a link is clicked
+	container.innerHTML = ""; 
+	// Loading icon appears
+	container.appendChild(loadingIcon); 
+	// Content appears after 3 seconds
+	setTimeout(function () { 
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+			if (this.status == 200) {
+				container.innerHTML =
+	      		this.responseText;
+	    	}
+	  	}
+		var url = target.getAttribute('link');
+		xhttp.open("GET", url, true);
+		xhttp.send();
+	}, 3000);
 }
 
 </script>
