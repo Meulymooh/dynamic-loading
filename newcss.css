@@ -88,45 +88,108 @@ p {
   background-image: url("img/binoculars.jpg");
 }
 
-#slide1 {
+.header4 {
+  background-image: url("img/achievements.jpg");
+}
+
+#slideA1 {
   background-image: url("img/writer.jpg");
 }
 
-#slide2 {
+#slideA2 {
   background-image: url("img/translator-2.jpg");
 }
 
-#slide3{
+#slideA3{
   background-image: url("img/teacher-3.jpg");
 }
 
-#slide4 {
+#slideA4 {
   background-image: url("img/coordinator.jpg");
 }
 
 
-#slide5 {
+#slideB1 {
   background-image: url("img/easy.jpg");
   z-index:2;
 }
 
-#slide6 {
+#slideB2 {
   background-image: url("img/responsive.jpg");
 }
 
-#slide7 {
+#slideB3 {
   background-image: url("img/javascript.jpg");
 }
 
-#slide8 {
+#slideB4 {
+  background-image: url("img/may.jpg");
+}
+
+#slideC1 {
   background-image: url("img/stairs.jpg");
 }
 
-#slide9 {
+#slideC2 {
   background-image: url("img/work.jpg");
 }
 
-#slide10 {
+#slideC3 {
   background-image: url("img/victory.jpg");
+  z-index:2;
+}
+
+#slideD1 {
+  background-image: url("img/vcard.jpg");
+  z-index:2;
+}
+
+#slideD2 {
+  background-image: url("img/error.jpg");
+  z-index:2;
+}
+
+#slideD3 {
+  background-image: url("img/luggage.jpg");
+  z-index:2;
+}
+
+#slideD4 {
+  background-image: url("img/pile.jpg");
+  z-index:2;
+}
+
+#slideD5 {
+  background-image: url("img/lego.jpg");
+  z-index:2;
+}
+
+#slideD6 {
+  background-image: url("img/group.jpg");
+  z-index:2;
+}
+
+#slideD7 {
+  background-image: url("img/cat.jpg");
+  z-index:2;
+}
+
+#slideD8 {
+  background-image: url("img/business.jpg");
+  z-index:2;
+}
+
+#slideD9 {
+  background-image: url("img/tools.jpg");
+  z-index:2;
+}
+
+#slideD10 {
+  background-image: url("img/shopping.jpg");
+  z-index:2;
+}
+
+#slideD11 {
+  background-image: url("img/jenga.jpg");
   z-index:2;
 }
