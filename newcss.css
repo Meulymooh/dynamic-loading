@@ -14,6 +14,7 @@ body {
   padding:0;
   height: 100%;
   font-family: Nunito;
+  background: #f2f2f2;
 }
 
 h1 {
@@ -24,6 +25,10 @@ p {
   font-size: 140%;
   line-height: 150%;
   color: #333;
+}
+
+#container {
+  margin-top: 3%;
 }
 
 #loadingIcon {
@@ -139,57 +144,55 @@ p {
   z-index:2;
 }
 
-#slideD1 {
-  background-image: url("img/vcard.jpg");
-  z-index:2;
+/*Portfolio (cards)*/
+
+.wrapper {
+  width: 90%;
+  background-color: #f2f2f2;
 }
 
-#slideD2 {
-  background-image: url("img/error.jpg");
-  z-index:2;
+.card-title {
+  height: 30px;
 }
 
-#slideD3 {
-  background-image: url("img/luggage.jpg");
-  z-index:2;
+.card-text {
+  height: 130px;
 }
 
-#slideD4 {
-  background-image: url("img/pile.jpg");
-  z-index:2;
+.card-button {
+  height: 40px;
 }
 
-#slideD5 {
-  background-image: url("img/lego.jpg");
-  z-index:2;
+.wrapper .card {
+  background-color: #fff;
+}
+.wrapper .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: 0 center;
+}
+.card-title h4 {
+  font-size: 1.8em;
+  padding: 10px 0 0px 0;
 }
 
-#slideD6 {
-  background-image: url("img/group.jpg");
-  z-index:2;
+.card-text p {
+  font-size: 1.1em;
+  padding-top: 10px;
+  color: #555;
+  margin: 20px;
 }
 
-#slideD7 {
-  background-image: url("img/cat.jpg");
-  z-index:2;
+.row {
+  padding: 10px;
 }
 
-#slideD8 {
-  background-image: url("img/business.jpg");
-  z-index:2;
+.card {
+  padding: 10px;
+  border: 0.5px solid grey;
 }
 
-#slideD9 {
-  background-image: url("img/tools.jpg");
-  z-index:2;
-}
-
-#slideD10 {
-  background-image: url("img/shopping.jpg");
-  z-index:2;
-}
-
-#slideD11 {
-  background-image: url("img/jenga.jpg");
-  z-index:2;
+.wrapper {
+   margin: auto;
 }
