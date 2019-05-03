@@ -147,7 +147,7 @@ p {
 /*Portfolio (cards)*/
 
 .wrapper {
-  width: 90%;
+  width: 100%;
   background-color: #f2f2f2;
 }
 
@@ -189,10 +189,15 @@ p {
 }
 
 .card {
-  padding: 10px;
   border: 0.5px solid grey;
 }
 
-.wrapper {
-   margin: auto;
+.subwrapper {
+  width: 90%;
+  margin: auto;
+  background-color: #f2f2f2;
+}
+
+.card-body {
+  padding: 10px;
 }
