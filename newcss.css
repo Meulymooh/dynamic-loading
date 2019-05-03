@@ -155,8 +155,12 @@ p {
   height: 30px;
 }
 
+.card-month {
+  height: 50px;
+}
+
 .card-text {
-  height: 130px;
+  height: 100px;
 }
 
 .card-button {
@@ -177,8 +181,15 @@ p {
   padding: 10px 0 0px 0;
 }
 
-.card-text p {
+.card-month p {
   font-size: 1.1em;
+  padding: 15px 0 15px 0;
+  text-align: center;
+}
+
+}
+p-1 {
+  font-size: 1.5em;
   padding-top: 10px;
   color: #555;
   margin: 20px;
@@ -201,3 +212,4 @@ p {
 .card-body {
   padding: 10px;
 }
+
