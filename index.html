@@ -40,37 +40,37 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="file:///home/emilie/Desktop/Assignments/dynamic-loading/index.html">Emilie 1, 2, 3!</a>
+        <a class="navbar-brand" href="index.html">About Emilie</a>
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a id="past" link="past.html" href="#" onclick="display(this)">Past</a></li>
-          <li class="active"><a id="present" link="present.html" href="#" onclick="display(this)">Present</a></li>
-          <li class="active"><a id="future" link="future.html" href="#" onclick="display(this)">Future</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-        	<li><a href="https://twitter.com/RandomEmilie" target="_blank"><img border="0" alt="Twitter" src="img/twitter.png" width="25" height="25"></a></li>
-        	<li><a href="https://www.instagram.com/belgianemilie/" target="_blank"><img border="0" alt="Instagram" src="img/instagram.png" width="25" height="25"></a></li>
-        	<li><a href="https://www.linkedin.com/in/emilie-mesureur-b0a91523/" target="_blank"><img border="0" alt="Linkedin" src="img/linkedin.png" width="25" height="25"></a></li>
-        	<li><a href="https://github.com/Meulymooh" target="_blank"><img border="0" alt="Linkedin" src="img/github2.png" width="25" height="25"></a></li>
-          <li class="dropdown active">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More about me <span class="caret"></span></a>
+          <li><a id="past" link="past.html" href="#" onclick="display(this)">Past</a></li>
+          <li><a id="present" link="present.html" href="#" onclick="display(this)">Present</a></li>
+          <li><a id="future" link="future.html" href="#" onclick="display(this)">Future</a></li>            
+          <li><a id="portfolio" link="portfolio.html" href="#" onclick="display(this)">Portfolio</a></li>        	
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">And more... <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a link="portfolio.html" href="#" onclick="display(this)">BeCode Portfolio</a></li>
-              <li><a href="http://emilie.watlock.be/CV_Emilie.pdf" target="_blank">My CV</a></li>
+              <li><a href="https://meulymooh.github.io/My-CV/index.html" target="_blank">My CV</a></li>
               <li><a href="https://ajobinghent.wordpress.com/" target="_blank">Blog: A Job in Ghent</a></li>
               <li><a href="https://theflemishdream.wordpress.com/" target="_blank">Blog: The Flemish Dream</a></li>
               <li><a href="https://scrapofnowhere.wordpress.com/" target="_blank">Blog: My Scrap of Nowhere</a></li>
             </ul>
           </li>
         </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://twitter.com/RandomEmilie" target="_blank"><img border="0" alt="Twitter" src="img/twitter.png" width="25" height="25"></a></li>
+          <li><a href="https://www.instagram.com/belgianemilie/" target="_blank"><img border="0" alt="Instagram" src="img/instagram.png" width="25" height="25"></a></li>
+          <li><a href="https://www.linkedin.com/in/emilie-mesureur-b0a91523/" target="_blank"><img border="0" alt="Linkedin" src="img/linkedin.png" width="25" height="25"></a></li>
+          <li><a href="https://github.com/Meulymooh" target="_blank"><img border="0" alt="Linkedin" src="img/github2.png" width="25" height="25"></a></li>
+        </ul>
       </div>
     </div>
   </nav>
 
 
-<div id="container"></div>
+<div id="container"><div id="background"></div></div>
 
 <script>
 
@@ -103,7 +103,7 @@ function display(target) {
 		var url = target.getAttribute('link');
 		xhttp.open("GET", url, true);
 		xhttp.send();
-	}, 3000);
+	}, 2500);
 }
 
 </script>
